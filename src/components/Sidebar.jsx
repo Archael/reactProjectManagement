@@ -1,6 +1,6 @@
 import Button from './Button';
 
-export default function Sidebar() {
+export default function Sidebar({ onStartAddProject }) {
   function clickHander() {
     console.log('click');
   }
@@ -10,7 +10,7 @@ export default function Sidebar() {
         Your projects
       </h2>
       <div>
-        <Button>+ Add project</Button>
+        <Button onClick={onStartAddProject}>+ Add project</Button>
       </div>
     </aside>
   );
